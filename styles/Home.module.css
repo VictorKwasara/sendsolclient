@@ -68,10 +68,12 @@
   border:#ffbe56;
   font-weight: 900;
   font-size: 15px;
+  border-radius: 5px ;
 }
 
 .input {
   background: #f2f2f2;
+  border-radius: 5px ;
 }
 
 .formField {
@@ -81,6 +83,7 @@
   font-size: 16px;
   border: 0;
   font-family: "Roboto", sans-serif;
+  border-radius: 5px ;
 }
 .formButton {
   margin: 0 0 10px 0;
@@ -95,4 +98,5 @@
   border:#ffbe56;
   font-weight: 900;
   font-size: 15px;
+  border-radius: 5px ;
 }
