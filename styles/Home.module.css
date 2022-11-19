@@ -10,12 +10,13 @@
 .AppHeader {
   height: 90px;
   display: flex;
-  background-color: black;
+  background-image: linear-gradient(to right top, #ffbe56, #ffcc5a, #ffdb5f, #fce967, #f9f871);
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-size: 50px;
+  font-size: 40px;
   color: white;
+  font-weight: bolder;
   padding-left: 20px;
   padding-right: 20px;
   flex-wrap: wrap;
@@ -32,10 +33,41 @@
   padding-top: 50px;
 }
 
+.container {
+
+  height: auto ;
+  width: auto ;
+  /* background-color: white ; */
+}
+
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px ;
+  margin-bottom: 10px;
+}
+.receiver {
+
+  color:#EF517F ;
+}
+
+.form div button {
+  margin: 10px 0 10px 0;
+  padding: 15px;
+  width: 200px ;
+  height: 50px;
+  background-image: linear-gradient(to right top, #ffbe56, #ffcc5a, #ffdb5f, #fce967, #f9f871);
+  color: #fff ;
+  border:#ffbe56;
+  font-weight: 900;
+  font-size: 15px;
 }
 
 .input {
@@ -51,9 +83,16 @@
   font-family: "Roboto", sans-serif;
 }
 .formButton {
-  margin: 10px 0 10px 0;
-  padding: 15px;
+  margin: 0 0 10px 0;
+  padding: 5px;
   font-size: 16px;
   border: 0;
   font-family: "Roboto", sans-serif;
+   width: 200px ;
+  height: 50px;
+  background-image: linear-gradient(to right top, #ffbe56, #ffcc5a, #ffdb5f, #fce967, #f9f871);
+  color: #fff ;
+  border:#ffbe56;
+  font-weight: 900;
+  font-size: 15px;
 }
