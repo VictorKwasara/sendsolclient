@@ -8,9 +8,7 @@ export const SendSolForm: FC = () => {
     const {connection } = useConnection();
     const {publicKey, sendTransaction} = useWallet() ;
 
-
     const sendSol = async(event)  => {
-        console.log("stuff");
         event.preventDefault()
         console.log(`Send ${event.target.amount.value} SOL to ${event.target.recipient.value}`)
         const recepient = new PublicKey(event.target.recipient.value);
@@ -25,9 +23,8 @@ export const SendSolForm: FC = () => {
         transaction.add(instruction)
 
         const signature = await sendTransaction ( transaction,connection) ;
-        console.log(
-					`Explorer URL: https://explorer.solana.com/tx/${signature}?cluster=devnet`
-				);
+        console.log(`Explorer URL: https://explorer.solana.com/tx/${signature}?cluster=devnet`);
+
     }
 
     return (
