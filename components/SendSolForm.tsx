@@ -26,6 +26,7 @@ export const SendSolForm: FC = () => {
         transaction.add(instruction)
 
         const signature = await sendTransaction ( transaction,connection) ;
+        setAmount("")
         console.log(`Explorer URL: https://explorer.solana.com/tx/${signature}?cluster=devnet`);
 
     }
